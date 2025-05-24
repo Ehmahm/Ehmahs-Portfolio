@@ -1,4 +1,5 @@
 /* AMOLED Theme Colors */
+
 :root {
     --bg-primary: #000000;
     --bg-secondary: #121212;
@@ -8,7 +9,9 @@
     --text-secondary: #b3b3b3;
 }
 
+
 /* Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +25,9 @@ body {
     line-height: 1.6;
 }
 
+
 /* Navigation */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -67,13 +72,17 @@ body {
     color: var(--accent-primary);
 }
 
+
 /* Main Content */
+
 main {
     padding-top: 80px;
     min-height: 100vh;
 }
 
+
 /* Hero Section */
+
 .hero {
     height: calc(100vh - 80px);
     display: flex;
@@ -90,19 +99,16 @@ main {
 .glowing-text {
     font-size: 4rem;
     margin-bottom: 1rem;
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    color: #00d4ff;
 }
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px var(--accent-primary),
-                     0 0 20px var(--accent-primary),
-                     0 0 30px var(--accent-secondary);
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff);
     }
     to {
-        text-shadow: 0 0 20px var(--accent-primary),
-                     0 0 30px var(--accent-primary),
-                     0 0 40px var(--accent-secondary);
+        text-shadow: 0 0 20px #00d4ff, 0 0 30px #00d4ff, 0 0 40px #00d4ff;
     }
 }
 
@@ -112,7 +118,9 @@ main {
     margin-bottom: 2rem;
 }
 
+
 /* Buttons */
+
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -138,7 +146,9 @@ main {
     box-shadow: 0 0 20px rgba(0, 255, 245, 0.3);
 }
 
+
 /* Skills Section */
+
 .skills {
     padding: 4rem 2rem;
     background-color: var(--bg-secondary);
@@ -171,7 +181,9 @@ main {
     border-color: var(--accent-primary);
 }
 
+
 /* Projects Section */
+
 .projects {
     padding: 4rem 2rem;
 }
@@ -221,7 +233,9 @@ main {
     font-size: 0.9rem;
 }
 
+
 /* Contact Section */
+
 .contact {
     padding: 4rem 2rem;
 }
@@ -292,25 +306,23 @@ main {
     border-color: var(--accent-primary);
 }
 
+
 /* Responsive Design */
+
 @media (max-width: 768px) {
     .glowing-text {
         font-size: 3rem;
     }
-    
     .contact-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
     .navbar {
         padding: 1rem;
     }
-    
     .nav-links {
         gap: 1rem;
     }
-    
     .nav-links a {
         padding: 0.5rem;
     }
